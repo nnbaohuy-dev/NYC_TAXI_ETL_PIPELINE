@@ -1,0 +1,9 @@
+polars==1.44.2
+SQLAlchemy==2.0.52
+psycopg[binary]==3.3.5
+python-dotenv==1.2.3
+pyarrow==25.0.1
+ipykernel==7.3.0
+minio==7.2.20
+pyspark==4.2.0
+docker==7.1.0

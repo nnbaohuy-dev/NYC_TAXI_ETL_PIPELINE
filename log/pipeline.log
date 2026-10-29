@@ -1,0 +1,56 @@
+2026-10-28 15:26:22 | INFO     | local_to_minio | Đang tải yellow_tripdata_2016-01.parquet vào bucket raw
+2026-10-28 15:26:22 | INFO     | local_to_minio | Dung lượng: 151,251,087 bytes
+2026-10-28 15:26:23 | INFO     | local_to_minio | Tải thành công yellow_tripdata_2016-01.parquet vào bucket raw
+2026-10-28 15:57:16 | INFO     | raw_to_processed | Tạo spark session
+2026-10-28 15:57:16 | INFO     | raw_to_processed | Đóng spark session
+2026-10-28 15:58:10 | INFO     | raw_to_processed | Tạo spark session
+2026-10-28 15:58:15 | INFO     | Schema validation | Schema validation passed
+2026-10-28 15:59:06 | INFO     | raw_to_processed | Tải thành công yellow_tripdata_2016-01.parquet vào bucket processed
+2026-10-28 15:59:06 | INFO     | raw_to_processed | Đóng spark session
+2026-10-28 16:00:09 | INFO     | processed_to_warehouse | Tạo spark session
+2026-10-28 16:00:13 | INFO     | processed_to_staging | Ghi dữ liệu vào warehouse.staging
+2026-10-28 16:04:12 | INFO     | processed_to_staging | Load dữ liệu vào warehouse.staging thành công
+2026-10-28 16:04:18 | INFO     | processed_to_staging | Validation staging: file = 10825595, PostgreSQL = 10825595
+2026-10-28 16:04:22 | INFO     | load_date | Cập nhật thành công ngày tháng từ 2016-01-01 đến 2016-02-01
+2026-10-28 16:04:26 | INFO     | staging_to_warehouse | Tạo thành công bảng warehouse.fact_trip_2016_01
+2026-10-28 16:15:04 | INFO     | staging_to_warehouse | Load thành công yellow_tripdata_2016-01.parquet từ staging vào warehouse
+2026-10-28 16:15:04 | INFO     | processed_to_warehouse | Hoàn thành load yellow_tripdata_2016-01.parquet từ processed vào warehouse
+2026-10-28 16:15:04 | INFO     | processed_to_warehouse | Đóng spark session
+2026-10-29 02:08:51 | INFO     | local_to_minio | Không phát hiện file mới trong /opt/airflow/project/data/raw
+2026-10-29 02:08:54 | INFO     | local_to_minio | Không phát hiện file mới trong /opt/airflow/project/data/raw
+2026-10-29 02:09:10 | INFO     | raw_to_processed | Tạo spark session
+2026-10-29 02:09:10 | INFO     | raw_to_processed | Đóng spark session
+2026-10-29 02:09:23 | INFO     | processed_to_warehouse | Tạo spark session
+2026-10-29 02:09:23 | INFO     | processed_to_warehouse | Đóng spark session
+2026-10-29 02:30:05 | INFO     | local_to_minio | Đang tải yellow_tripdata_2016-02.parquet vào bucket raw
+2026-10-29 02:30:05 | INFO     | local_to_minio | Dung lượng: 158,113,739 bytes
+2026-10-29 02:30:07 | INFO     | local_to_minio | Tải thành công yellow_tripdata_2016-02.parquet vào bucket raw
+2026-10-29 02:30:19 | INFO     | raw_to_processed | Tạo spark session
+2026-10-29 02:30:27 | INFO     | Schema validation | Schema validation passed
+2026-10-29 02:31:49 | INFO     | raw_to_processed | Tải thành công yellow_tripdata_2016-02.parquet vào bucket processed
+2026-10-29 02:31:50 | INFO     | raw_to_processed | Đóng spark session
+2026-10-29 02:32:05 | INFO     | processed_to_warehouse | Tạo spark session
+2026-10-29 02:32:11 | INFO     | processed_to_staging | Ghi dữ liệu vào warehouse.staging
+2026-10-29 02:35:52 | INFO     | processed_to_staging | Load dữ liệu vào warehouse.staging thành công
+2026-10-29 02:35:57 | INFO     | processed_to_staging | Validation staging: file = 11296257, PostgreSQL = 11296257
+2026-10-29 02:36:02 | INFO     | load_date | Cập nhật thành công ngày tháng từ 2016-02-01 đến 2016-03-01
+2026-10-29 02:36:06 | INFO     | staging_to_warehouse | Tạo thành công bảng warehouse.fact_trip_2016_02
+2026-10-29 02:46:44 | INFO     | staging_to_warehouse | Load thành công yellow_tripdata_2016-02.parquet từ staging vào warehouse
+2026-10-29 02:46:44 | INFO     | processed_to_warehouse | Hoàn thành load yellow_tripdata_2016-02.parquet từ processed vào warehouse
+2026-10-29 02:46:45 | INFO     | processed_to_warehouse | Đóng spark session
+2026-10-29 03:00:03 | INFO     | local_to_minio | Đang tải yellow_tripdata_2016-03.parquet vào bucket raw
+2026-10-29 03:00:03 | INFO     | local_to_minio | Dung lượng: 170,019,864 bytes
+2026-10-29 03:00:05 | INFO     | local_to_minio | Tải thành công yellow_tripdata_2016-03.parquet vào bucket raw
+2026-10-29 03:00:19 | INFO     | raw_to_processed | Tạo spark session
+2026-10-29 03:00:26 | INFO     | Schema validation | Schema validation passed
+2026-10-29 03:01:33 | INFO     | raw_to_processed | Tải thành công yellow_tripdata_2016-03.parquet vào bucket processed
+2026-10-29 03:01:33 | INFO     | raw_to_processed | Đóng spark session
+2026-10-29 03:01:45 | INFO     | processed_to_warehouse | Tạo spark session
+2026-10-29 03:01:49 | INFO     | processed_to_staging | Ghi dữ liệu vào warehouse.staging
+2026-10-29 03:06:03 | INFO     | processed_to_staging | Load dữ liệu vào warehouse.staging thành công
+2026-10-29 03:06:06 | INFO     | processed_to_staging | Validation staging: file = 12118520, PostgreSQL = 12118520
+2026-10-29 03:06:11 | INFO     | load_date | Cập nhật thành công ngày tháng từ 2016-03-01 đến 2016-04-01
+2026-10-29 03:06:15 | INFO     | staging_to_warehouse | Tạo thành công bảng warehouse.fact_trip_2016_03
+2026-10-29 03:17:25 | INFO     | staging_to_warehouse | Load thành công yellow_tripdata_2016-03.parquet từ staging vào warehouse
+2026-10-29 03:17:25 | INFO     | processed_to_warehouse | Hoàn thành load yellow_tripdata_2016-03.parquet từ processed vào warehouse
+2026-10-29 03:17:26 | INFO     | processed_to_warehouse | Đóng spark session

@@ -1,0 +1,9 @@
+CREATE SCHEMA IF NOT EXISTS metadata;
+
+CREATE TABLE IF NOT EXISTS metadata.file_log (
+    source_file TEXT PRIMARY KEY,
+    raw_loaded BOOLEAN NOT NULL DEFAULT FALSE,
+    processed_loaded BOOLEAN NOT NULL DEFAULT FALSE,
+    warehouse_loaded BOOLEAN NOT NULL DEFAULT FALSE,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
